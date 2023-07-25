@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import { config } from "dotenv";
 
 config({
-    path:"./data/config.env",
+    path:"config.env",
 });
 
 export const connectDB=()=>{
