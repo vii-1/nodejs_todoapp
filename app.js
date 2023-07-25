@@ -1,6 +1,6 @@
 import express from "express";
-import userRourt from "../NodeAPI/routes/user.js";
-import taskRourt from "../NodeAPI/routes/task.js";  
+import userRourt from "./routes/user";
+import taskRourt from "./routes/task.js";  
 import { config } from "dotenv";
 import cookieParser from "cookie-parser";
 import { errorMiddleware } from "./middlewares/error.js";
