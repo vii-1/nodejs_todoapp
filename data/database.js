@@ -6,6 +6,7 @@ config({
 });
 
 export const connectDB=()=>{
+    console.log(process.env.MONGO_URI);
     mongoose.connect(process.env.MONGO_URI,{
     dbName:"Backendapi"
 })
