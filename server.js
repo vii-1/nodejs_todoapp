@@ -1,7 +1,14 @@
 import {app} from "./app.js";
 import { connectDB } from "./data/database.js";
+import { config } from "dotenv";
+
+config({
+    path:"config.env",
+});
+
 
 connectDB();
+
 
 
 app.listen(process.env.PORT,()=>{
